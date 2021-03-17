@@ -1,18 +1,14 @@
+
+
 export const appendMenu = () => {
-    const navElement = document.createElement('nav');
-    const ulElement = document.createElement('ul');
-    const menuLiElement = document.createElement('li');
-    const homeLiElement = document.createElement('li');
-    const contactLiElement = document.createElement('li');
+    const menuContainerElement = document.createElement('div');
+    const paragraphElement = document.createElement('p');
 
-    homeLiElement.innerHTML = 'Home'
-    menuLiElement.innerHTML = 'Menu';
-    contactLiElement.innerHTML = 'Contact';
+    menuContainerElement.classList = 'menu-container';
+    paragraphElement.innerHTML = 'I am a para';
 
-    ulElement.appendChild(contactLiElement);
-    ulElement.appendChild(menuLiElement);
-    ulElement.appendChild(homeLiElement);
-    navElement.appendChild(ulElement);
+    menuContainerElement.appendChild(paragraphElement);
 
-    return navElement;
+    return menuContainerElement;
+
 }

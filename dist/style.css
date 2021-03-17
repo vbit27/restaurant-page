@@ -1,8 +1,12 @@
 body {
     background-color: #22343b;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     box-sizing: border-box;
 }
+
+
+
+/* Navigation Bar */
 
 nav {
     position: fixed;
@@ -22,8 +26,17 @@ nav ul li {
     font-size: 1.5rem;
     margin: 0 2rem;
     letter-spacing: 0.4rem;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
+
+nav ul li:hover {
+    background-color: #19272c;
+    cursor: pointer; 
+}
+
+
+
+/* Home page style */
 
 .container {
     height: 100vh;
@@ -65,4 +78,18 @@ button {
 
 img {
     width: 100%;
+}
+
+
+/* Menu styling */
+
+.menu-container {
+    font-size: 10rem;
+}
+
+
+/* Contact Container */
+
+.contact-container {
+    font-size: 10rem;
 }
