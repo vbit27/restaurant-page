@@ -18,20 +18,17 @@ const conntactBtnElemtn = document.getElementById('contact');
 
 
 function switchToHome() {
-
     reset();
     content.appendChild(appendHome());
 }
 
 
 function switchToMenu() {
-
     reset();
     content.appendChild(appendMenu());
 }
 
 function switchToContact() {
-
     reset();
     content.appendChild(appendContact());
 }

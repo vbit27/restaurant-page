@@ -1,5 +1,3 @@
-
-
 export const appendContact = () => {
     const contactContainerElement = document.createElement('div');
     const paragraphElement = document.createElement('p');

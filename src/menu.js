@@ -1,5 +1,3 @@
-
-
 export const appendMenu = () => {
     const menuContainerElement = document.createElement('div');
     const paragraphElement = document.createElement('p');
