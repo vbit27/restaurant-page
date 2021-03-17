@@ -1,3 +1,5 @@
 import { appendHome } from './homepage';
 
-document.body.appendChild(appendHome());
+const content = document.getElementById('content');
+
+content.appendChild(appendHome());
