@@ -12,7 +12,7 @@ body {
 }
 
 
-#title-container {
+.title-container {
     display: flex;
     width: 70%;
     padding-left: 3rem;
@@ -31,15 +31,12 @@ button {
     cursor: pointer;
 }
 
-#img-container {
+.img-container {
     position: absolute;
     width: 30rem;
     top: 10rem;
     right: 5rem;
     z-index: -1;
-
-   
-
 }
 
 img {
