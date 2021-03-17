@@ -11,6 +11,7 @@ export const appendHome = () => {
     containerElement.classList = 'container';
     titleContainerElement.classList = 'title-container';
     titleElement.innerHTML = "The tea you'll <br> never spill";
+    titleElement.classList = 'title';
     buttonElement.innerHTML = 'Our Products';
     imageContainerElement.classList = 'img-container';
     const imageElement = document.createElement('img');
