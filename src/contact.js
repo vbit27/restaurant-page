@@ -8,5 +8,4 @@ export const appendContact = () => {
     contactContainerElement.appendChild(paragraphElement);
 
     return contactContainerElement;
-
 }

@@ -4,11 +4,11 @@ import { appendContact } from './contact';
 
 
 
-content.appendChild(appendHome());
+//content.appendChild(appendHome());
 
 
 
-const navigationLogic = (() => {
+(function updateDisplay() {
 
 const content = document.getElementById('content');
 const homeBtnElement = document.getElementById('home');
