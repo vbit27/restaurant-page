@@ -52,22 +52,18 @@ nav ul li:hover {
   width: 70%;
   padding-left: 3rem;
   flex-direction: column;
-  padding-top: 0;
+  padding-top: 10rem;
+}
+
+.title-container h3 {
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.3rem;
 }
 
 .title {
   font-size: 8vw;
-}
-
-button {
-  width: 13rem;
-  padding: 1.5rem;
-  background-color: transparent;
-  border: 1px solid white;
-  font-size: 1rem;
-  color: whitesmoke;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
+  margin-top: 0;
 }
 
 .img-container {
@@ -91,12 +87,26 @@ img {
 .grid-container {
   margin-top: 15rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 5rem;
 }
 
 .cell {
-  background-color: rgb(80, 80, 77);
+  background-color: #1d2d33;
+  box-shadow: 0px 3px 30px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease;
+}
+
+.cell:hover {
+  transform: scale(1.01);
+}
+
+.cell h3 {
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 /* Contact Container */
@@ -111,7 +121,7 @@ h2 {
 
 .grid-container-contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .contact-cell-info {
@@ -134,4 +144,115 @@ h2 {
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.2rem;
+}
+
+@media (max-width: 1200px) {
+  /* Home Page */
+
+  .title-container h3 {
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 11vw;
+  }
+
+  /* contact page */
+
+  h2 {
+    font-size: 12vw;
+  }
+
+  .contact-cell-info p {
+    font-size: 1.4rem;
+  }
+
+  .contact-cell-info h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Navigator */
+
+  nav ul li {
+    font-size: 1rem;
+    margin: 0 1vw;
+    letter-spacing: 0.4rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Home Page */
+
+  .img-container {
+    top: 20%;
+    width: 50%;
+  }
+
+  /* Menu Page */
+
+  .cell h3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Navigator */
+
+  nav ul li {
+    font-size: 0.7rem;
+  }
+
+  /* Home Page */
+  .img-container {
+    top: 20%;
+    right: 0;
+    width: 80%;
+    opacity: 0.8;
+  }
+
+  .title-container {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 7rem;
+  }
+
+  .title-container h3 {
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 18vw;
+  }
+
+  /* Menu Page */
+
+  .grid-container {
+    margin-top: 6rem;
+  }
+
+  /* Contact Page */
+
+  .contact-cell-title {
+    width: fit-content;
+  }
+
+  h2 {
+    font-size: 15vw;
+  }
+
+  .contact-cell-info {
+    margin-top: 0;
+    width: fit-content;
+    padding: 1rem;
+  }
+
+  .contact-cell-info p {
+    font-size: 1rem;
+  }
+
+  .contact-cell-info h3 {
+    font-size: 2rem;
+  }
 }
