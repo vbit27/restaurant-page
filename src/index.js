@@ -2,11 +2,9 @@ import { appendHome } from './homepage';
 import { appendMenu } from './menu';
 import { appendContact } from './contact';
 
-
-
 content.appendChild(appendHome());
 
-
+// Link Menu buttons to functions 
 
 (function updateDisplay() {
 
@@ -14,7 +12,6 @@ const content = document.getElementById('content');
 const homeBtnElement = document.getElementById('home');
 const menuBtnElement = document.getElementById('menu');
 const contactElement = document.getElementById('contact');
-
 
 
 function switchToHome() {
