@@ -5,6 +5,8 @@ export const appendHome = () => {
     const titleElement = document.createElement('h1');
     const buttonElement = document.createElement('button');
     const imageContainerElement = document.createElement('div');
+    const imageElement = document.createElement('img');
+
 
 
 
@@ -14,7 +16,6 @@ export const appendHome = () => {
     titleElement.classList = 'title';
     buttonElement.innerHTML = 'Our Products';
     imageContainerElement.classList = 'img-container';
-    const imageElement = document.createElement('img');
     imageElement.setAttribute('src', '../img/tea.jpg');
     imageElement.setAttribute('alt', 'tea cup');
 

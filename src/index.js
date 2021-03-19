@@ -13,7 +13,7 @@ import { appendContact } from './contact';
 const content = document.getElementById('content');
 const homeBtnElement = document.getElementById('home');
 const menuBtnElement = document.getElementById('menu');
-const conntactBtnElemtn = document.getElementById('contact');
+const contactElement = document.getElementById('contact');
 
 
 
@@ -41,6 +41,6 @@ function reset() {
 
 homeBtnElement.addEventListener('click', switchToHome);
 menuBtnElement.addEventListener('click', switchToMenu);
-conntactBtnElemtn.addEventListener('click', switchToContact);
+contactElement.addEventListener('click', switchToContact);
 
 })();
