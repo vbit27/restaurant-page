@@ -3,9 +3,10 @@ export const appendHome = () => {
     const containerElement = document.createElement('div');
     const titleContainerElement = document.createElement('div');
     const titleElement = document.createElement('h1');
-    const buttonElement = document.createElement('button');
+    const subTitleElement = document.createElement('h3');
     const imageContainerElement = document.createElement('div');
     const imageElement = document.createElement('img');
+
 
 
 
@@ -14,15 +15,15 @@ export const appendHome = () => {
     titleContainerElement.classList = 'title-container';
     titleElement.innerHTML = "The tea you'll <br> never spill";
     titleElement.classList = 'title';
-    buttonElement.innerHTML = 'Our Products';
+    subTitleElement.innerHTML = '100% ORGANIC & FAIR TRADE';
     imageContainerElement.classList = 'img-container';
     imageElement.setAttribute('src', '../img/tea.jpg');
     imageElement.setAttribute('alt', 'tea cup');
 
 
 
+    titleContainerElement.appendChild(subTitleElement );
     titleContainerElement.appendChild(titleElement);
-    titleContainerElement.appendChild(buttonElement);
     containerElement.appendChild(titleContainerElement);
     imageContainerElement.appendChild(imageElement);
     containerElement.appendChild(imageContainerElement);

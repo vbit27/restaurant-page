@@ -6,13 +6,14 @@ export const appendMenu = () => {
         {img: '../img/tea1.jpg',
         name: 'Green Tea'},
         {img: '../img/tea2.jpg',
-        name: 'Black Tea'},
+        name: 'Motcha Tea'},
         {img: '../img/tea3.jpg',
-        name: 'Mint Tea'}
+        name: 'Herbal Tea'}
     ];
 
     menu.forEach(x => render(x));
 
+// Creates the menu elements 
 
     function render(x) {
         const img = document.createElement('img');
@@ -26,6 +27,7 @@ export const appendMenu = () => {
         appendProduct(img, name, productCell);
     }
     
+// Appends the elements
 
     function appendProduct(img, name, cell) {
         cell.appendChild(img);

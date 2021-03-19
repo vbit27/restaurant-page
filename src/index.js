@@ -4,7 +4,7 @@ import { appendContact } from './contact';
 
 
 
-//content.appendChild(appendHome());
+content.appendChild(appendHome());
 
 
 
